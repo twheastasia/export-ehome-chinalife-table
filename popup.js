@@ -32,6 +32,7 @@ function exportTable() {
     for (const td of row.children) {
       tempRow.push(td.innerText);
     }
+    tempRow[0] = '\'' + tempRow[0];
     csv.push(tempRow.join(','));
   }
 
